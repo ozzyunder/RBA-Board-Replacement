@@ -2,11 +2,13 @@
 ​A Python-based simulation of the Reserve Bank of Australia (RBA) monetary policy process. This script replicates the "Dual Mandate" logic (balancing inflation and employment) used to determine the Australian Cash Rate.
 ​📖 Project Overview
 ​As of May 2026, the RBA operates in a highly volatile economic environment. This tool uses a stochastic (randomized) multi-instance approach to simulate a 7-member board meeting. It accounts for different economic perspectives—ranging from "Hawks" (inflation-focused) to "Doves" (growth-focused)—to arrive at a consensus decision.
+
 ​Key Features
 ​Dual Mandate Logic: Evaluates the gap between current CPI and the 2–3% target, alongside the unemployment rate.
 ​Stochastic Modeling: Each of the 7 simulated instances (members) has a randomized bias, reflecting the diversity of opinion in a real boardroom.
 ​Consensus Averaging: Aggregates individual votes and rounds to the nearest 0.25% (25 basis points), mirroring standard central bank movements.
 ​Real-time Alignment: Updated to reflect the economic conditions of May 2026, where inflation has seen a resurgence to 4.6%.
+
 ​🚀 How It Works
 ​The core logic follows a modified Taylor Rule. The decision-making process is broken down into three stages:
 ​Data Intake: The script accepts current CPI, Unemployment, and Wage Growth data.
